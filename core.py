@@ -29,6 +29,10 @@ class Player:
     
     def change_Health(self,amount):
         self.health = self.health + amount
+        if self.health <= 0:
+             slow_print("That pushed you off your edge and you die")
+             slow_print("GAMEOVER",0.2)
+             quit
         if amount > 0 :
             slow_print("you gained "+str(amount)+" health")
         else :
