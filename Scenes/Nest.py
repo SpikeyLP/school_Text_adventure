@@ -8,7 +8,7 @@ def run(player):
         slow_print("You could use your rope to climb.")
 
     choice = input("Climb up? (yes/no): ").strip().lower()
-    if choice == "yes":
+    if choice in ["yes", "y"]:
         if "rope" in player.inventory:
             slow_print("You climb the tree and find a feather in the nest.")
             player.add_item("feather")

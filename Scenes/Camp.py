@@ -8,7 +8,7 @@ def run(player):
 
     choice = input("Do you dig through it? (yes/no): ").strip().lower()
 
-    if choice == "yes":
+    if choice == "yes" or choice == "y":
         slow_print("You find a silver ring.")
         player.add_item("silver ring")
     else:

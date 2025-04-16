@@ -26,12 +26,13 @@ def run_game():
             Weights.append(scene_name)
 
     # Number of random scenes to pick
-    x = 5  # Change this value to however many random scenes you want to run
+    x = 10  # Change this value to however many random scenes you want to run
 
     # Choose a random scene x times and run them
     for _ in range(x):
         random_scene = random.choice(Weights)
         Scenes.scene_modules[random_scene].run(player)
+        Weights.remove(random_scene)
         print()
 
 if __name__ == "__main__":
