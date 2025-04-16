@@ -2,7 +2,6 @@
 
 import random
 import Scenes
-import Scenes.scene_start
 from core import Player,slow_print  # Import the Player class
 
 def run_game():
@@ -14,7 +13,7 @@ def run_game():
     player = Player(name)  # You can set the name or pass other attributes
     print()
     # Start with the start scene
-    Scenes.scene_start.run(player)
+    Scenes._start.run(player)
     print()
     Weights = []
 

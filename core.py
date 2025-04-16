@@ -19,6 +19,10 @@ class Player:
     def add_item(self, item):
         self.inventory.append(item)
         slow_print("you got a "+ item)
+
+    def remove_item(self, item):
+        self.inventory.remove(item)
+        slow_print("you Lost a "+ item)
         
     def __str__(self):
         return f"{self.name} (Health: {self.health}, Inventory: {self.inventory})"
