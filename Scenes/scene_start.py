@@ -14,4 +14,3 @@ def run(player):
         # You could now load scene_forest.py or another
     else:
         slow_print("You stay put, hearing distant howls. You might regret this...")
-

@@ -21,18 +21,19 @@ def run(player):
 
     if "torch" in player.inventory:
         slow_print("3) Light the torch and enter carefully")
-
+    print()
     choice = input("> ").strip()
 
     if choice == "1":
         slow_print("You stumble blindly into the darkness and trip over a rock.")
-        player.take_damage(15)
+        player.change_Health(15)
     elif choice == "2":
         slow_print("You leave the cave behind. Maybe next time.")
     elif choice == "3" and "torch" in player.inventory:
         slow_print("You light the torch. The cave glows with flickering light.")
         slow_print("Inside, you find ancient carvings on the walls...")
-        player.add_item("mysterious rune")
+        player.add_item("knowledge...")
+        slow_print("You quickly leave the cave and walk further")
     else:
-        slow_print("You stand frozen, unsure what to do.")
+        slow_print("youre unsure and just headout.")
 

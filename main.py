@@ -11,10 +11,10 @@ def run_game():
     name = input()
     
     player = Player(name)  # You can set the name or pass other attributes
-
+    print()
     # Start with the start scene
     Scenes.scene_start.run(player)
-    
+    print()
     Weights = []
 
 
@@ -32,6 +32,7 @@ def run_game():
     for _ in range(x):
         random_scene = random.choice(Weights)
         Scenes.scene_modules[random_scene].run(player)
+        print()
 
 if __name__ == "__main__":
     run_game()
