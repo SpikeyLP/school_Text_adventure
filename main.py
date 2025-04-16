@@ -17,6 +17,7 @@ def run_game():
     
     Weights = []
 
+
     # Loop through the scenes and create the weighted list
     for scene_name, scene_module in Scenes.scene_modules.items():
         weight = getattr(scene_module, "Weight", 1)
