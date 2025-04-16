@@ -1,4 +1,5 @@
 from core import slow_print
+from time import sleep
 
 Weight = 0
 
@@ -14,3 +15,5 @@ def run(player):
         # You could now load scene_forest.py or another
     else:
         slow_print("You stay put, hearing distant howls. You might regret this...")
+        sleep(.5)
+        quit()

@@ -21,14 +21,14 @@ def run(player):
         choice = input("> ").strip()
         if choice == "1":
             slow_print("The squirell Atacks you.")
-            player.change_Health(15)
+            player.change_Health(-15)
         elif choice == "2":
             slow_print("As you try to hit it, it atacks you.")
-            player.change_Health(25)
+            player.change_Health(-25)
         elif choice == "3" and "torch" in player.inventory:
             slow_print("You Atack the squirell with your torch")
             slow_print("You succesfully kill it and ate his meat")
-            player.change_Health(-20)
+            player.change_Health(20)
         else:
             slow_print("You stand frozen, unsure what to do.")
 

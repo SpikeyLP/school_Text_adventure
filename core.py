@@ -1,7 +1,7 @@
 import time
 import sys
 
-def slow_print(text, delay=0.03):
+def slow_print(text, delay=0.06):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -28,4 +28,5 @@ class Player:
         if amount > 0 :
             slow_print("you gained "+str(amount)+" health")
         else :
-            slow_print("you Lost "+abs(amount)+" health")
+            slow_print("you Lost "+str(abs(amount))+" health")
+        slow_print("you now have "+str(self.health)+ " Health")

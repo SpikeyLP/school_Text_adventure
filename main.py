@@ -7,6 +7,7 @@ from core import Player,slow_print  # Import the Player class
 
 def run_game():
     # Create the player object
+    print(r"Dislayer: Anything Other than 'yes' or 'y' will result in No")
     slow_print("What Is your name dear Traveler")
     name = input()
     
