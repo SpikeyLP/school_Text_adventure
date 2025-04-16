@@ -1,5 +1,8 @@
 from core import slow_print
 
+Weight = 1
+
+
 def run(player):
     slow_print("You find a cave entrance hidden behind some vines.")
     slow_print("It's pitch black inside. You can't see a thing.")
@@ -7,7 +10,7 @@ def run(player):
     if "torch" not in player.inventory:
         slow_print("You see something glinting nearby.")
         choice = input("Do you pick up the torch? (yes/no): ").strip().lower()
-        if choice == "yes":
+        if choice == "yes" or choice =="y":
             player.add_item("torch")
         else:
             slow_print("You leave it. The darkness stays thick.")

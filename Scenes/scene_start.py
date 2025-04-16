@@ -1,5 +1,8 @@
 from core import slow_print
 
+Weight = 0
+
+
 def run(player):
     slow_print("You awaken in a dark forest. The air is damp and cold.")
     slow_print("There is a path leading north.")
